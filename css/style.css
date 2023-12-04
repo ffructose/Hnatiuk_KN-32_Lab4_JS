@@ -78,13 +78,13 @@
 }
 
 .menu-list a:hover::before,
-.menu-list .current:before{
-    left:0;
+.menu-list .current:before {
+    left: 0;
 }
 
 .menu-list>a:hover::after,
-.menu-list .current:after{
-    left:0;
+.menu-list .current:after {
+    left: 0;
 }
 
 
@@ -96,37 +96,10 @@
     padding-left: 5vw;
 }
 
-.p-list {
-    text-align: start;
-    padding-top: 3vw;
-}
 
-.result {
-    padding-left: 5%;
-    width: 95%;
-    background-color: pink;
-}
 
-.b-button {
-    background-color: cornflowerblue;
-    font-family: "myFont";
-    border: none;
-    color: aliceblue;
-    padding: 20px 20px 20px 20px;
-    margin-top: 35px;
-    margin-bottom: 30px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    border-radius: 8px;
-    font-size: 30px;
-    transition: all 0.3s ease-out;
-    text-align: center;
-}
 
-.b-button:hover {
-    background-color: rgb(168, 112, 201);
-}
+
 
 
 
@@ -168,48 +141,103 @@
 
 .result>h1 {
     font-family: "myFont";
+    justify-content: center;
+
+    align-items: center;
     font-size: 35px;
     line-height: 40px;
     font-weight: 800;
 }
 
-@media (max-width: 768px){
+button {
+    justify-self: center;
+
+    background-color: cornflowerblue;
+    font-family: "myFont";
+    border: none;
+    color: aliceblue;
+    padding: 10px;
+    margin-top: 35px;
+    margin-bottom: 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 8px;
+    font-size: 26px;
+    transition: all 0.3s ease-out;
+    text-align: center;
+    width: 45%;
+}
+
+button:hover {
+    background-color: rgb(168, 112, 201);
+    cursor: pointer;
+}
+
+.result {
+    width: 100%;
+    background-color: pink;
+    display: grid;
+}
+
+.table_fridge {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table_fridge_th, .table_fridge td {
+    text-align: center;
+    padding: 5px;
+    border: 5px solid indianred;
+    width: 180px;
+    height: 35px;
+    font-size: 30px;
+}
+
+.future_table{
+    display: grid;
+    align-self: center;
+    justify-self: center;
+}
+
+
+@media (max-width: 768px) {
     .header>h1 {
         font-family: "myFont";
         font-size: 30px;
         line-height: 35px;
         font-weight: 500;
     }
-    
+
     .header>h2 {
         font-family: "myFont";
         font-size: 20px;
         line-height: 35px;
         font-weight: 300;
     }
-    
+
     .task>h3 {
         font-family: "myFont";
         font-size: 25px;
         line-height: 20px;
         font-weight: 800;
     }
-    
+
     .task>p {
         font-family: "myFont";
         font-size: 18px;
         line-height: 20px;
         font-weight: 200;
     }
-    
+
     .p-text {
         text-align: center;
         padding-top: 10px;
         padding-bottom: 25px;
-    
-    
+
+
     }
-    
+
     .result>h1 {
         font-family: "myFont";
         font-size: 25px;
@@ -219,7 +247,7 @@
 
 
 
-    .menu-list{
+    .menu-list {
         padding-top: 0;
     }
 
@@ -239,52 +267,54 @@
         line-height: 10px;
     }
 
-    .b-button {
-        padding: 15px 15px 15px 15px;
-        margin-top: 15px;
-        margin-bottom: 25px;
-        border-radius: 8px;
-        font-size: 25px;
+    .table_fridge_th, .table_fridge td {
+        text-align: center;
+        padding: 5px;
+        border: 5px solid indianred;
+        width: 100px;
+        height: 35px;
+        font-size: 20px;
     }
+
 }
 
-@media (max-width: 425px){
+@media (max-width: 425px) {
     .header>h1 {
         font-family: "myFont";
         font-size: 25px;
         line-height: 35px;
         font-weight: 500;
     }
-    
+
     .header>h2 {
         font-family: "myFont";
         font-size: 20px;
         line-height: 35px;
         font-weight: 300;
     }
-    
+
     .task>h3 {
         font-family: "myFont";
         font-size: 25px;
         line-height: 35px;
         font-weight: 800;
     }
-    
+
     .task>p {
         font-family: "myFont";
         font-size: 18px;
         line-height: 20px;
         font-weight: 200;
     }
-    
+
     .p-text {
         text-align: center;
         padding-top: 15px;
         padding-bottom: 25px;
-    
-    
+
+
     }
-    
+
     .result>h1 {
         font-family: "myFont";
         font-size: 25px;
@@ -293,7 +323,7 @@
     }
 
 
-    .menu-list{
+    .menu-list {
         padding-top: 0;
     }
 
@@ -311,12 +341,13 @@
         margin: 0 30px;
         font-size: 25px;
     }
-    
-    .b-button {
-        padding: 15px 15px 15px 15px;
-        margin-top: 15px;
-        margin-bottom: 25px;
-        border-radius: 8px;
-        font-size: 20px;
+
+    .table_fridge_th, .table_fridge td {
+        text-align: center;
+        padding: 5px;
+        border: 5px solid indianred;
+        width: 80px;
+        height: 20px;
+        font-size: 16px;
     }
 }
